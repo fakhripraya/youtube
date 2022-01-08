@@ -1,7 +1,9 @@
-.feed{
-    flex:5.5
+.feed {
+    flex: 5.5;
+    background-color: transparent;
+    z-index: 1;
 }
 
-.feedWrapper{
+.feedWrapper {
     padding: 20px;
 }

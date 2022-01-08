@@ -17,7 +17,7 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
-        <ul className="sidebarList">
+        {/* <ul className="sidebarList">
           <li className="sidebarListItem">
             <RssFeed className="sidebarIcon" />
             <span className="sidebarListItemText">Feed</span>
@@ -61,7 +61,7 @@ export default function Sidebar() {
           {Users.map((u) => (
             <CloseFriend key={u.id} user={u} />
           ))}
-        </ul>
+        </ul> */}
       </div>
     </div>
   );
