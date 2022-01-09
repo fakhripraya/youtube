@@ -39,22 +39,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    -webkit-box-shadow: 0px 0px 16px -8px #fff;
-    box-shadow: 0px 0px 16px -8px #fff;
     height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 99;
 }
 
 .profileInfoName {
     font-size: 24px;
+    z-index: 99;
 }
 
 .profileInfoDesc {
-    font-weight: 300;
+    font-weight: bold;
     z-index: 99;
+    font-size: 14px;
 }
 
 .profileRightBottom {

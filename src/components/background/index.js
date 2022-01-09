@@ -20,110 +20,172 @@ const Background = () => {
 
     return (
         <Particles id="tsparticles" options={{
+            themes: [
+                {
+                    name: "light",
+                    default: {
+                        value: true,
+                        mode: "light"
+                    },
+                    options: {
+                        background: {
+                            color: "#ffffff"
+                        },
+                        particles: {
+                            color: {
+                                value: ["#000000", "#0000ff"]
+                            }
+                        }
+                    }
+                },
+                {
+                    name: "dark",
+                    default: {
+                        value: true,
+                        mode: "dark"
+                    },
+                    options: {
+                        background: {
+                            color: "#000000"
+                        },
+                        particles: {
+                            color: {
+                                value: ["#ffffff", "#ff0000"]
+                            }
+                        }
+                    }
+                },
+                {
+                    name: "red",
+                    options: {
+                        background: {
+                            color: "#ff0000"
+                        },
+                        particles: {
+                            color: {
+                                value: ["#ffffff", "#000000"]
+                            }
+                        }
+                    }
+                },
+                {
+                    name: "green",
+                    options: {
+                        background: {
+                            color: "#00ff00"
+                        },
+                        particles: {
+                            color: {
+                                value: ["#000000", "#0000ff"]
+                            }
+                        }
+                    }
+                },
+                {
+                    name: "blue",
+                    options: {
+                        background: {
+                            color: "#0000ff"
+                        },
+                        particles: {
+                            color: {
+                                value: ["#ffffff", "#00ff00"]
+                            }
+                        }
+                    }
+                },
+                {
+                    name: "yellow",
+                    options: {
+                        background: {
+                            color: "#ffff00"
+                        },
+                        particles: {
+                            color: {
+                                value: ["#000000", "#ff0000"]
+                            }
+                        }
+                    }
+                },
+                {
+                    name: "cyan",
+                    options: {
+                        background: {
+                            color: "#00ffff"
+                        },
+                        particles: {
+                            color: {
+                                value: ["#000000", "#ff00ff"]
+                            }
+                        }
+                    }
+                },
+                {
+                    name: "grey",
+                    options: {
+                        background: {
+                            color: "#777777"
+                        },
+                        particles: {
+                            color: {
+                                value: ["#ffffff", "#000000"]
+                            }
+                        }
+                    }
+                }
+            ],
             fpsLimit: 60,
             particles: {
                 number: {
-                    value: maxParticles,
+                    value: 10,
                     density: {
                         enable: true,
-                        value_area: maxParticles * 10 * 2
+                        value_area: 800
                     }
-                },
-                color: {
-                    value: color
                 },
                 shape: {
-                    type: "circle",
-                    stroke: {
-                        width: 0,
-                        color: "#000000"
-                    },
-                    polygon: {
-                        nb_sides: 5
-                    }
+                    type: ["circle", "square"]
                 },
                 opacity: {
-                    value: 0.5,
-                    random: false,
-                    anim: {
-                        enable: false,
-                        speed: 1,
-                        opacity_min: 0.1,
-                        sync: false
-                    }
+                    value: 1
                 },
                 size: {
-                    value: 3,
-                    random: true,
-                    anim: {
-                        enable: false,
-                        speed: 40,
-                        size_min: 0.1,
-                        sync: false
+                    value: 25,
+                    random: {
+                        enable: true,
+                        minimumValue: 15
                     }
                 },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: color,
-                    opacity: 1,
-                    width: 1
+                rotate: {
+                    value: 0,
+                    direction: "random",
+                    animation: {
+                        speed: 25,
+                        enable: true
+                    }
                 },
                 move: {
                     enable: true,
                     speed: 2,
                     direction: "none",
-                    random: false,
-                    straight: false,
-                    out_mode: "out",
-                    bounce: false,
-                    attract: {
-                        enable: false,
-                        rotateX: 600,
-                        rotateY: 1200
-                    }
+                    out_mode: "out"
                 }
             },
             interactivity: {
-                detect_on: "canvas",
+                detectsOn: "canvas",
                 events: {
-                    onhover: {
+                    onHover: {
                         enable: true,
-                        mode: "grab"
+                        mode: "repulse"
                     },
-                    onclick: {
+                    onClick: {
                         enable: true,
                         mode: "push"
                     },
                     resize: true
-                },
-                modes: {
-                    grab: {
-                        distance: 140,
-                        line_linked: {
-                            opacity: 1
-                        }
-                    },
-                    bubble: {
-                        distance: 400,
-                        size: 40,
-                        duration: 2,
-                        opacity: 8,
-                        speed: 3
-                    },
-                    repulse: {
-                        distance: 200,
-                        duration: 0.4
-                    },
-                    push: {
-                        particles_nb: 4
-                    },
-                    remove: {
-                        particles_nb: 2
-                    }
                 }
             },
-            retina_detect: true
+            detectRetina: true
         }} init={particlesInit} loaded={particlesLoaded} />
     )
 }

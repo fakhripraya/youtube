@@ -6,7 +6,7 @@ export default function Share() {
     <div className="share">
       <div className="shareWrapper">
         <div className="shareTop">
-          <img className="shareProfileImg" src="https://cdn.discordapp.com/attachments/923260530578292817/926118988809916486/1.jpg" alt="" />
+          <img className="shareProfileImg" src="https://cdn.discordapp.com/attachments/926917876223459428/926942659367538738/FIBtOi1UYAMmlaY.png" alt="" />
           <input
             placeholder="What's in your mind ElenaKOngz#8360?"
             className="shareInput"

@@ -9,9 +9,9 @@ export default function Register() {
       <div className="loginWrapper">
         <div className="loginRight">
           <div className="loginBox">
-            <h3 className="loginLogo">Welcome New Travelers!</h3>
+            <h3 className="loginLogo">HI DOODLES!!</h3>
             <span className="loginDesc">
-              Please put your identity here to connect with other holder and conquer the metaverse together
+              Dood Blees put ur Iddentity here doood! Lets go to the Metaverse together dooood!
             </span>
             <input placeholder="Username" className="loginInput" />
             <input placeholder="Email" className="loginInput" />

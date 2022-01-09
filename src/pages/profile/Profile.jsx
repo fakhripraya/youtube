@@ -22,13 +22,12 @@ export default function Profile() {
               />
               <img
                 className="profileUserImg"
-                src="https://cdn.discordapp.com/attachments/923260530578292817/926118988809916486/1.jpg"
+                src="https://cdn.discordapp.com/attachments/926917876223459428/926942659367538738/FIBtOi1UYAMmlaY.png"
                 alt=""
               />
             </div>
             <div className="profileInfo">
               <h4 className="profileInfoName">ElenaKOngz#8360</h4>
-              <br />
               <span className="profileInfoDesc">We are going to the moon!</span>
             </div>
           </div>

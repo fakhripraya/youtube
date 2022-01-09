@@ -8,9 +8,9 @@ export default function Login() {
       <div className="loginWrapper">
         <div className="loginRight">
           <div className="loginBox">
-            <h3 className="loginLogo">Welcome Back Travelers!</h3>
+            <h3 className="loginLogo">LETS GO DOOOD, EVERYONE IS WAITING DOOOODD!</h3>
             <span className="loginDesc">
-              Please insert your email and password to log into the hub
+              Please insert your email and password to log into the social media dood!
             </span>
             <input placeholder="Email" className="loginInput" />
             <input placeholder="Password" className="loginInput" />

@@ -5,7 +5,7 @@ export default function Topbar() {
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
-        <span className="logo">C-01 Hub</span>
+        <span className="logo">THE DAPE SOCIAL MEDIA</span>
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
@@ -35,7 +35,7 @@ export default function Topbar() {
             <span className="topbarIconBadge">1</span>
           </div>
         </div> */}
-        <img src="https://cdn.discordapp.com/attachments/923260530578292817/926118988809916486/1.jpg" alt="" className="topbarImg" />
+        <img src="https://cdn.discordapp.com/attachments/926917876223459428/926942659367538738/FIBtOi1UYAMmlaY.png" alt="" className="topbarImg" />
       </div>
     </div>
   );
